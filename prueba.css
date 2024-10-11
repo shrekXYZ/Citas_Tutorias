@@ -1,0 +1,78 @@
+.tablausuarios{
+    position: absolute;
+    width: 100%;
+    height: 40rem;
+    padding-bottom: 10px;
+    border: none;
+}
+
+.division{
+    width: 100%;
+    height: 40px;
+    background-color: #2ec9de;
+}
+.BotonComun{
+    background-color: #2ec9de;
+    color: white;
+    font-weight: 700;
+    border: none;
+    height: 40px;
+    
+    cursor: pointer;
+    width:30%;
+    transition: background-color 0.5s ease;
+}
+.BotonComun:hover{
+    color: #2ec9de;
+    background-color: white;
+    transition: ease-in-out;
+    transition: background-color 0.5s ease;
+}
+.botoneditar{
+    background-color: #2AFF00;
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    cursor:pointer;
+}
+.botoneditar:nth-last-of-type(1){
+    background-color: red;
+}
+.ModalEditar{
+    z-index: 10;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #2AFF00;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    justify-content: center;
+    padding: 25px;
+}
+.agregarusuario{
+    z-index: 10;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #2ec9de;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 25px;
+}
+.modalEliminar{
+    z-index: 10;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 25px;
+}
