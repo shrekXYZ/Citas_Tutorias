@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'SourceSerifPro-Light';
+    src: url(../letra/SourceSerifPro-Light.ttf) format('truetype');
+}
+body{
+    font-family: 'SourceSerifPro-Light';
+}
+
+h1 {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}

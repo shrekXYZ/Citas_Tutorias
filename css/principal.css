@@ -1,0 +1,227 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+/* Este es el container azul principal */
+.CA {
+  position: absolute;
+  background-color: #c4dafa;
+  height: 80%;
+  width: 100%;
+}
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin: -200px 0 0 -40px;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .2em 1em;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: #3c6a92;
+  position: relative;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(126, 173, 196);
+  border-right: 3px solid rgb(126, 173, 196);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(126, 173, 196);
+  border-left: 3px solid rgb(126, 173, 196);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: rgb(126, 173, 196);
+}
+
+.foto img {
+  max-width: 40%; 
+  height: auto; 
+  display: block;
+  margin: -70px 0 0 -40px; 
+}
+
+.texto-inferior {
+  text-align: center; 
+  margin: 50px 400px 0 20px; 
+  font-size: 80px;
+}
+
+.boton-iniciar-sesion {
+  background-color: #005887;
+  color: #ffefff;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 10px; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-iniciar-sesion:hover {
+  background-color: #00a6ff; 
+  color: #fff; 
+}
+/* Aqui inicia el container del formulario */
+.container {
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #8d82bc60; 
+  border-radius: 10px; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 5%;
+  left: 70%;
+  width: 350px; 
+  height: 480px;
+  text-align: left;
+  margin-bottom: 20px
+}
+
+.registro {
+  margin-bottom: 20px; 
+}
+.registro:nth-last-of-type(1){
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* inicia el div social */
+.Social {
+  position: absolute;
+  background-color: #315285;
+  height: 820px; 
+  width: 100%;
+  top: 100%; 
+}
+
+/* Modifica los logos y le agrega sus efectos*/
+.Red {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Red li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.Red li a {
+  position: relative;
+  display: block;
+  width: 135px;  
+  height: 135px; 
+  text-align: center;
+  line-height: 138px; 
+  background: #333;
+  border-radius: 50%;
+  font-size: 75px; 
+  color: #666;
+  transition: .5s;
+}
+
+.Red li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgb(16, 207, 255);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.Red li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgb(16, 207, 255);
+}
+
+.Red li a:hover {
+  color: rgb(16, 207, 255);
+  box-shadow: 0 0 5px rgb(16, 207, 255);
+  text-shadow: 0 0 5px rgb(16, 207, 255);
+}
+/* Seccion de vision */
+.Vision{
+  position: absolute;
+  background-color: #c4dafa;
+  height: 620px; 
+  width: 100%;
+  top: 230%; 
+  text-align: center;
+  font-size: 30px;
+}

@@ -1,0 +1,221 @@
+:root{
+    --ColorPrincipal:#005187;
+    --ColorSecundario:#4d82bc;
+    --TercerColor:#84b6f4;
+    --CuartoColor:#c4dafa;
+    --QuintoColor:#fcffff;
+    --LetraSecundaria:'Skranji', cursive;
+}
+*{
+    list-style: none;
+}
+body{
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.HeaderPrincipal{
+    display: block;
+    background-color: var(--ColorPrincipal);
+}
+.HeaderPrincipal--logo img{
+    width: 250px;
+    
+}
+.OpcionesUsuario{
+    grid-column: -2/-1;
+    text-align: center;
+}
+
+.OpcionesUsuarioCerrarSesion{
+    width: 100%;
+}
+
+.OpcionesUsuario a{
+    color: white;
+    text-decoration: none;
+}
+.opciones:hover{
+    background-color: #00C3FF;
+    border-radius: 5px;
+    width: 100%;
+}
+.OpcionesUsuario button{
+    background-color: var(--ColorPrincipal);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.BotonCerrar:hover{
+    background-color: #00C3FF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.Buscador{
+    padding: 5px;
+    
+}
+.Buscador input{
+    font-size: 18px;
+    padding: 0 20px;
+    color: #000000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+.botonbusqueda{
+    background-color: red;
+    width: 30px;
+    height: 32px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-search{
+    margin: 5px;
+    color: white;
+}
+.HeaderPrincipal--Navegacion img{
+    width: 100px;
+}
+@media(min-width:732px){
+    .HeaderPrincipal{
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        background-color: var(--ColorPrincipal);
+        color: var(--QuintoColor);
+    }   
+    .HeaderPrincipal--logo img{
+        width: 200px;
+        padding: 12px 20px;
+        
+    }
+    
+}
+
+.ContenidoPrincipal{
+    margin-block: 1rem;
+}
+
+.HeaderPrincipal--Navegacion img{
+    max-width: 60%;
+}
+.link1{
+    color: var(--QuintoColor);
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--ColorPrincipal);
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.HeaderPrincipal--Navegacion{
+    display: flex;
+    justify-content: center;
+}
+@media(min-width:732px){
+    .Cursos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+
+.Buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BuscadorInformacion{
+    width: 70%;
+    height: 2rem;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #2978b9;
+}
+
+.TextoCentrado {
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--ColorPrincipal);
+    padding: 50px 0;
+    position: absolute;
+    width: 100%;
+}
+.footer-row{
+    display: grid;
+    grid-template-rows: repeat(3,10rem);
+    gap: 100px;
+    justify-content: center;
+}
+@media(min-width:732px){
+    .footer-row{
+        display: flex;
+    }
+}
+.footer-links{
+    width: 100%;
+    padding: 0;
+
+    
+}
+.footer-links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BDBDBD;
+    display: block;
+    margin-bottom: 13px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+.redessociales a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+.redessociales a:hover{
+    background-color: #00C3FF;
+}
+@media(min-width:732px){
+    
+}

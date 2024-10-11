@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'SourceSerifPro-Light';
+    src: url(../letra/SourceSerifPro-Light.ttf) format('truetype');
+}
+body{
+    font-family: 'SourceSerifPro-Light';
+}
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005187;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+img{
+    max-width: 100%;
+}
+.HeaderVistaProfile{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.HeaderVistaProfileTitulo{
+    
+    grid-column: 2/3;
+    text-align: center;
+    justify-content: center;
+}
+.HeaderVistaProfileTitulo{
+    display: grid;
+    grid-template-rows: repeat(3,30%);
+    
+}
+.TituloPerfil{
+    grid-row: 2/3;
+}
+.HeaderVistaProfileImagen{
+    grid-row: 1/2;
+}
+@media(min-width:732px){
+    .HeaderVistaProfileImagen{
+        max-width: 70%;
+    }
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.profile-picture {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3d4c63;
+}
+
+.user-info {
+    flex: 2;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.user-info h1 {
+    font-size: 28px;
+    color: #3d4c63;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.activity {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.activity h2 {
+    font-size: 24px;
+    color: #3d4c63;
+    margin-bottom: 10px;
+}
+
+.activity ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity li {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.courses {
+    flex: 2;
+    padding: 20px;
+}
+
+.courses h2 {
+    font-size: 24px;
+    color: #3d4c63;
+    margin-bottom: 10px;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courses li {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
